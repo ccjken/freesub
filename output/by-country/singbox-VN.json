@@ -4,18 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe",
-      "server": "199.232.78.101",
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
+      "server": "160.187.1.101",
       "server_port": 443,
-      "password": "MITIVpN",
+      "uuid": "c92e12ca-ea66-4785-8675-652b35134117",
       "tls": {
         "enabled": true,
-        "server_name": "ssl.fastly.com",
+        "server_name": "thus-k.netnode.cc.cd",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,8 +20,9 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/t.me/daily_free_vpn",
         "headers": {
-          "Host": "mitivpn---ss--s---mitivpn-11e.global.ssl.fastly.net"
+          "Host": "thus-k.netnode.cc.cd"
         }
       }
     },
@@ -33,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
