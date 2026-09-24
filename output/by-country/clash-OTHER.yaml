@@ -5,21 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.21.57.84
-  port: 8443
+  server: 172.67.169.99
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: ef5c5d5c-08c6-4549-b05e-d1ff29ecc8ba
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: 5-M16.PHukeT2035.Kdns.FR
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /JRr6VGcSLFc034DC6sDbwyWJLbB
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: 5-m16.PHukeT2035.KDnS.FR
 proxy-groups:
 - name: PROXIES
   type: select
