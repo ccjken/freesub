@@ -4,22 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "85.155.228.185",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "188.114.96.3",
       "server_port": 443,
-      "uuid": "ca5ffe64-81e0-42f0-a136-03cc4f662a4f",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "avsal.krusofiya.fun",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9M294WArTUZ9m1fMmvlHauSb5wZo68SkCW_lEgBVAF8",
-          "short_id": "4d5faa03b738bd3b"
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
